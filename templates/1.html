@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+
+    <link rel="stylesheet" href="2.css">
+    <link rel="stylesheet"
+href="{{ url_for('static', filename='2.css') }}">
+
+</head>
+<body>
+
+<div class="wrapper">
+
+	<div class="form8">
+
+		<div class="stripes">
+			<div class="stripe stripe1"></div>
+			<div class="stripe stripe2"></div>
+			<div class="stripe stripe3"></div>
+			<div class="stripe stripe4"></div>
+			<div class="stripe stripe5"></div>
+			<div class="stripe stripe6"></div>
+			<div class="stripe stripe7"></div>
+		</div>
+		
+		<button class="form8__btncircle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="form8__log">
+			<span class="form8__text">
+				<span>Sign in</span> now
+			</span>
+			<form action="/register" method="POST">
+
+<input type="text"
+name="nickname"
+placeholder="Nickname">
+
+<input type="text"
+name="real_name"
+placeholder="Real name">
+
+<input type="password"
+name="password"
+placeholder="Password">
+
+<button type="submit">
+Submit
+</button>
+
+</form>
+		</div>
+
+	</div>
+	
+</div>
+<script src="3.js"></script>       
+<script src="{{ url_for('static', filename='3.js') }}"></script>
+
+</body>
+</html>
